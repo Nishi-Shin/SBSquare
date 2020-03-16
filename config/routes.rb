@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root  'tweets#index'
-  get 'tweets' => 'tweets#index'
-  get 'tweets/new' => 'tweets#new'
+  devise_for :users
+  root 'tweets#index'
+  resources :tweets do
+    resources :comments, only: [:create]
+  end
+  resources :tweets                     #tweets_controllerに対してのresourcesメソッド
+  resources :users, only: [:show]       #users_controllerに対してのresourcesメソッド
 end
