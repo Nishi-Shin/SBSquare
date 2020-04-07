@@ -15,7 +15,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Unica+One);
 
-$accent: #57C3E9;
+$accent: hsl(240, 56%, 59%);
 $black: #292929;
 $dark: #666;
 $darkGray: #999999;
@@ -26,7 +26,7 @@ $white: white;
 
 //mixin
 
-@mixin boxBase($margin: 30px auto, $padding: 10px) {
+@mixin boxBase($margin: 0px auto, $padding: 5px) {
   margin: $margin;
   padding: $padding;
 }
@@ -372,7 +372,7 @@ form {
 
 footer {
   @include boxBase;
-  color: $gray;
+  color: black;
   p {
     text-align: center;
   }

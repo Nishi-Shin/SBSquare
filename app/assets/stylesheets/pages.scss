@@ -1,0 +1,23 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-title {
+  background-image: url("https://www.soccer-king.jp/wp-content/uploads/2016/01/IMG_6752_R.jpg");
+  background-size: cover;
+  height: 680px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logo {
+  padding-top: 450px;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.description {
+  text-align: center;
+  color: white;
+}
